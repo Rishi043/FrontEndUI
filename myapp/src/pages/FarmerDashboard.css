@@ -1,0 +1,200 @@
+/* FarmerDashboard.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0f7e9, #cfeeee);
+  color: #333;
+}
+
+.farmer-dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.farmer-sidebar {
+  width: 250px;
+  background-color: #2e7d32;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.farmer-sidebar h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.farmer-sidebar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  padding: 12px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+}
+
+.farmer-sidebar button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logout-button {
+  color: #ffcccc;
+}
+
+.logout-button:hover {
+  color: #ff4d4d;
+}
+
+/* MAIN CONTENT */
+.farmer-main {
+  flex: 1;
+  padding: 40px;
+  background-color: #f8fdf8;
+  overflow-y: auto;
+}
+
+.welcome-box {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;  
+  margin-top: 50px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.welcome-box h1 {
+  font-size: 32px;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.welcome-box p {
+  font-size: 16px;
+  color: #555;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: linear-gradient(to bottom right, #d5f5e3, #ffffff);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1b5e20;
+}
+
+.card p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.crop-table-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.crop-table-container h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #2e7d32;
+}
+
+.crop-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.crop-table th,
+.crop-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.crop-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.crop-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Extra dashboard card summary styles */
+.card-summary {
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+  border-left: 5px solid #2e7d32;
+  text-align: center;
+}
+
+.card-summary p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+
+.error {
+  color: red;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+/* Search input styling */
+.crop-search {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Recharts container */
+.recharts-wrapper {
+  margin: 40px 0;
+}
+
+/* Weather card */
+.weather-card {
+  background: white;
+  padding: 16px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}

@@ -4,14 +4,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
-
-  height: 100vh; 
-  align-items: center;
-  /* background: linear-gradient(#2A00B7, #42006C); */
-  background-size: cover;
-  background-image: url('./assets/bgimage.jpg');
-  background-repeat: no-repeat;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {

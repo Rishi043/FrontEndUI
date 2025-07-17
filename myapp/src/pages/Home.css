@@ -1,0 +1,174 @@
+.home-hero {
+  background-image: url('../assets/background.jpg');
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.content {
+  z-index: 2;
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.brand {
+  color: #90ee90;
+  font-weight: bold;
+}
+
+.btn {
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 12px 30px;
+}
+
+.btn-login {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+}
+
+.btn-register {
+  background: linear-gradient(135deg, #00ff95, #00c851);
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.single-line {
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: unset;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.left-shift {
+  margin-left: 1%;
+  text-align: left;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Enhanced Button Styles */
+.btn-login {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-register {
+  background: linear-gradient(135deg, #00ff95, #00c851);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav-btn-login,
+.nav-btn-register {
+  display: inline-block;
+  background: linear-gradient(135deg, #00c6ff, #0072ff); /* default for login */
+  color: white;
+  border: none;
+  border-radius: 999px !important; /* force full round */
+  padding: 10px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.nav-btn-register {
+  background: linear-gradient(135deg, #00ff95, #00c851);
+}
+
+.nav-btn-login:hover,
+.nav-btn-register:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+
+.imghome {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+

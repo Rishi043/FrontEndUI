@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #333;
+}
+
+.dealer-dashboard {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------- HEADER ---------------- */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 7px;
+}
+
+
+.user-info {
+  font-size: 15px;
+  color: #666;
+  margin-top: 10px; 
+  /* padding-top: 10px; */
+}
+
+.logout-btn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #d93636;
+}
+
+/* ---------------- SUMMARY ---------------- */
+.summary-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.summary-card {
+  background-color: #4e54c8;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+  min-width: 200px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card h3 {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.summary-card span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ---------------- ORDERS SECTION ---------------- */
+.orders-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.orders-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #4e54c8;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  overflow-x: auto;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.orders-table th {
+  background: #4e54c8;
+  color: #fff;
+  font-weight: 600;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.orders-table tr:hover {
+  background-color: #e3eaf0;
+  transition: background 0.2s ease-in-out;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
+
+.no-orders {
+  font-style: italic;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* ---------------- STATUS BADGES ---------------- */
+
+.status-text {
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 80px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Specific status colors */
+.status.pending .status-text {
+  background-color: #f1c40f; /* Yellow */
+}
+
+.status.failed .status-text {
+  background-color: #e74c3c; /* Red */
+}
+
+.status.success .status-text {
+  background-color: #2ecc71; /* Green */
+}
